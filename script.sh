@@ -49,16 +49,16 @@ chmod 770 /sec
 
 echo "Creating users..."
 
-useradd carlos -c "carlos" -s /bin/bash -m -G GRP_ADM -p $(openssl passwd -crypt Senha123)
-useradd maria -c "maria" -s /bin/bash -m -G GRP_ADM -p $(openssl passwd -crypt Senha123)
-useradd joao -c "joao" -s /bin/bash -m -G GRP_ADM -p $(openssl passwd -crypt Senha123)
+useradd carlos -c "carlos" -s /bin/bash -m -G GRP_ADM -p $(openssl passwd Senha123)
+useradd maria -c "maria" -s /bin/bash -m -G GRP_ADM -p $(openssl passwd Senha123)
+useradd joao -c "joao" -s /bin/bash -m -G GRP_ADM -p $(openssl passwd Senha123)
 
-useradd debora -c "debora" -s /bin/bash -m -G GRP_VEN -p $(openssl passwd -crypt Senha123)
-useradd sebastiana -c "sebastiana" -s /bin/bash -m -G GRP_VEN -p $(openssl passwd -crypt Senha123)
-useradd roberto -c "roberto" -s /bin/bash -m -G GRP_VEN -p $(openssl passwd -crypt Senha123)
+useradd debora -c "debora" -s /bin/bash -m -G GRP_VEN -p $(openssl passwd Senha123)
+useradd sebastiana -c "sebastiana" -s /bin/bash -m -G GRP_VEN -p $(openssl passwd Senha123)
+useradd roberto -c "roberto" -s /bin/bash -m -G GRP_VEN -p $(openssl passwd Senha123)
 
-useradd josefina -c "josefina" -s /bin/bash -m -G GRP_SEC -p $(openssl passwd -crypt Senha123)
-useradd amanda -c "amanda" -s /bin/bash -m -G GRP_SEC -p $(openssl passwd -crypt Senha123)
-useradd rogerio -c "rogerio" -s /bin/bash -m -G GRP_SEC -p $(openssl passwd -crypt Senha123)
+useradd josefina -c "josefina" -s /bin/bash -m -G GRP_SEC -p $(openssl passwd Senha123)
+useradd amanda -c "amanda" -s /bin/bash -m -G GRP_SEC -p $(openssl passwd Senha123)
+useradd rogerio -c "rogerio" -s /bin/bash -m -G GRP_SEC -p $(openssl passwd Senha123)
 
 echo "The end"
